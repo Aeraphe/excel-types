@@ -17,16 +17,16 @@
 ## Install
 
 - For instal excel@types just use XVBA-CLI install command
-'''
- npx xvba install excel@types
 
-'''
+```
+ npx xvba install excel@types
+```
 ## Comments Block
 
 - Use comments blocks below for documenting class/methods/Subs/Functions/Properties
 - The comments blocs has to start with '/* and ends with '*/
 
-'''
+```
 
 '/*
 'Represents the entire Microsoft Excel application.
@@ -35,9 +35,9 @@
 '*/
 Public Class Application()
 
-'''
+```
 
-'''
+```
 '/*
 'Returns a Range object that represents the active cell in the active window 
 '(the window on top) or in the specified window. If the window isn't displaying 
@@ -48,4 +48,4 @@ Public Class Application()
 '*/
 Public Property ActiveCell As Range
 
-'''
+```
