@@ -145,5 +145,13 @@ Public Sub SendMail(Recipients, Subject, ReturnReceipt)
 
 End Sub
 
+'/*
+'
+'The ExportAsFixedFormat method is used to publish 
+'a workbook to either the PDF or XPS format.
+'
+'*/
+Public Sub ExportAsFixedFormat(Type, FileName, Quality, IncludeDocProperties, IgnorePrintAreas, From, To, OpenAfterPublish, FixedFormatExtClassPtr)
+End Sub
 
 End Class
