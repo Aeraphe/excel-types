@@ -74,5 +74,13 @@ Public Property Range As Range
 Public Property Row As Range
 
 
+'/*
+'
+'Returns a Long value that represents the index number of the 
+'object within the collection of similar objects.orksheets("Sheet1").Rows(3).Delete
+'
+'*/
+Public Property Index As Long
+
 
 End Class
