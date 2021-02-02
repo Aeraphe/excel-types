@@ -5,6 +5,23 @@
 '*/
 Public Class Application()
 
+'/*
+'Returns an object that represents the active sheet (the sheet on top) 
+'in the active workbook or in the specified window or workbook. 
+'Returns Nothing if no sheet is active.
+'
+'*/
+Public Property ActiveSheet As Worksheet
+
+'/*
+'Returns a Workbook object that represents the workbook in the 
+'active window (the window on top). 
+'Returns Nothing if there are no windows open or if either 
+'the Info window or the Clipboard window is the active window. Read-only.
+'
+'
+'*/
+Public Property ActiveWorkbook As Workbook
 
 '/*
 'True if Microsoft Excel displays certain alerts and messages while 
