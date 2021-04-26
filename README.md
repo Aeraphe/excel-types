@@ -1,8 +1,8 @@
-# Excel VBA type Definitions Package (excel@types)
+# Excel VBA type Definitions Package (excel-types)
  
  - This package provides a way to use auto-complete for Excel VBA Class
  - You can Create your own vba type definition packages our update this.
- - Type definition packages has to have names like: name@types 
+ - Type definition packages are named like: name-types 
  - The packages are store in www.xvba.dev
  - Ech excel vba class has your own file definition 
  - The files extension has to be filename.d.vb
@@ -16,10 +16,10 @@
 
 ## Install
 
-- For instal excel@types just use XVBA-CLI install command
+- For instal excel-types just use XVBA-CLI install command
 
 ```
- npx xvba install excel@types
+ npx xvba install excel-types
 ```
 ## Comments Block
 
