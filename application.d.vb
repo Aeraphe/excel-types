@@ -6,6 +6,62 @@
 Public Class Application()
 
 '/*
+'Returns an object that represents the active sheet (the sheet on top) 
+'in the active workbook or in the specified window or workbook. 
+'Returns Nothing if no sheet is active.
+'
+'*/
+Public Property ActiveSheet As Worksheet
+
+'/*
+'Returns a Workbook object that represents the workbook in the 
+'active window (the window on top). 
+'Returns Nothing if there are no windows open or if either 
+'the Info window or the Clipboard window is the active window. Read-only.
+'
+'
+'*/
+Public Property ActiveWorkbook As Workbook
+
+'/*
+'True if Microsoft Excel displays certain alerts and messages while 
+'a macro is running. Read/write Boolean.
+'
+'Example
+'Application.DisplayAlerts = False 
+'Workbooks("BOOK1.XLS").Close 
+'Application.DisplayAlerts = True
+'
+'*/
+Public Property DisplayAlerts As Boolean
+
+
+'/*
+'Returns or sets an XlCalculation value that represents the calculation mode.
+'
+'Example
+'Application.Calculation = xlCalculationManual 
+'Application.Calculation = xlAutomatic
+'
+'@type {XlCalculation}
+'*/
+Public Property Calculation As XlCalculation
+
+'/*
+'True if events are enabled for the specified object. Read/write Boolean.
+'
+'@type {Boolean}
+'*/
+Public Property EnableEvents As Boolean
+
+'/*
+'True if screen updating is turned on. Read/write Boolean.
+'@type {Boolean}
+'*/
+Public Property ScreenUpdating As Boolean
+
+
+'/*
 'Returns a Range object that represents the active cell in the active window 
 '(the window on top) or in the specified window. If the window isn't displaying 
 'a worksheet, this property fails. Read-only.
@@ -26,6 +82,13 @@ Public Property ActiveCell As Range
 '@type {Object.<Chart>}
 '*/
 Public Property ActiveChart As Chart
+
+'/*
+'Returns a Workbooks collection that represents all the open workbooks. Read-only.
+'
+'@type {Object.<Collection>} Workbooks Collection
+'*/
+Public Property ThisWorkbook As Workbook
 
 '/*
 'Returns a Workbooks collection that represents all the open workbooks. Read-only.
@@ -68,5 +131,17 @@ Public Event AfterCalculate()
 '*/
 Public Event NewWorkbook(ByVal Wb As Workbook) 
 
+'/*
+'Returns a Sheets collection that represents all the sheets in the specified workbook. Read-only Sheets object.
+'
+'Example:
+'Set newSheet = Sheets.Add(Type:=xlWorksheet) 
+'For i = 1 To Sheets.Count 
+'    newSheet.Cells(i, 1).Value = Sheets(i).Name 
+'   Next i
+'
+'@type {Sheets}
+'*/
+Public Property Sheets As Worksheets
 
 End Class
