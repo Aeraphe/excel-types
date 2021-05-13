@@ -60,9 +60,9 @@ Public Property Sheets As Worksheets
 'Activates the first window associated with the workbook.
 '
 '*/
-Public Sub Activate() 
+Public Function Activate() 
 
-End Sub
+End Function
 
 '/*
 '
@@ -76,16 +76,16 @@ End Sub
 '@param {Variant}  FileName:[Optional] Saves changes under this file name.
 '@param {Variant}  RouteWorkbook:[Optional] True or False
 '*/
-Public Sub Close(SaveChanges,FileName,RouteWorkbook) 
+Public Function Close(SaveChanges,FileName,RouteWorkbook) 
 
-End Sub
+End Function
 
 '/*
 'Saves changes to the specified workbook.
 '*/
-Public Sub Save() 
+Public Function Save() 
 
-End Sub
+End Function
 
 '/*
 'Saves changes to the workbook in a different file.
@@ -103,9 +103,9 @@ End Sub
 '@param {Variant}  TextVisualLayout:[Optional]
 '@param {Variant}  Local:[Optional]
 '*/
-Public Sub SaveAs(FileName, FileFormat, Password, WriteResPassword, ReadOnlyRecommended, CreateBackup, AccessMode, ConflictResolution, AddToMru, TextCodepage, TextVisualLayout, Local)
+Public Function SaveAs(FileName, FileFormat, Password, WriteResPassword, ReadOnlyRecommended, CreateBackup, AccessMode, ConflictResolution, AddToMru, TextCodepage, TextVisualLayout, Local)
 
-End Sub
+End Function
 
 
 '/*
@@ -114,9 +114,9 @@ End Sub
 '@param {String}  FileName:[Required]
 '@param {XmlMap}  Map:[Required]
 '*/
-Public Sub SaveAsXMLData(FileName, Map) 
+Public Function SaveAsXMLData(FileName, Map) 
 
-End Sub
+End Function
 
 
 '/*
@@ -127,9 +127,9 @@ End Sub
 '
 '@param {Variant}  FileName:[Required]
 '*/
-Public Sub SaveCopyAs(FileName, Map) 
+Public Function SaveCopyAs(FileName, Map) 
 
-End Sub
+End Function
 
 '/*
 'Sends the workbook by using the installed mail system.
@@ -141,9 +141,9 @@ End Sub
 '@param {Variant}  Subject:[Optional]
 '@param {Variant}  ReturnReceipt:[Optional]
 '*/
-Public Sub SendMail(Recipients, Subject, ReturnReceipt) 
+Public Function SendMail(Recipients, Subject, ReturnReceipt) 
 
-End Sub
+End Function
 
 '/*
 '
@@ -151,7 +151,7 @@ End Sub
 'a workbook to either the PDF or XPS format.
 '
 '*/
-Public Sub ExportAsFixedFormat(Type, FileName, Quality, IncludeDocProperties, IgnorePrintAreas, From, To, OpenAfterPublish, FixedFormatExtClassPtr)
-End Sub
+Public Function ExportAsFixedFormat(Type, FileName, Quality, IncludeDocProperties, IgnorePrintAreas, From, To, OpenAfterPublish, FixedFormatExtClassPtr)
+End Function
 
 End Class
