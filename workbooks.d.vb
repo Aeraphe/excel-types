@@ -2,7 +2,7 @@
 'A collection of all the Workbook objects that are currently open in the Microsoft Excel application.
 '
 '*/
-Public Class Workbooks()
+Public Class Workbooks() 
 
 '/*
 'Creates a new workbook. The new workbook becomes the active workbook.
@@ -45,7 +45,7 @@ End Function
 'Workbooks.Open "ANALYSIS.XLS" 
 'ActiveWorkbook.RunAutoMacros xlAutoOpen
 '*/
-Public Function Open  (FileName, UpdateLinks, ReadOnly, Format, Password, WriteResPassword, IgnoreReadOnlyRecommended, Origin, Delimiter, Editable, Notify, Converter, AddToMru, Local, CorruptLoad) 
+Public Function Open  (FileName, UpdateLinks, ReadOnly, Format, Password, WriteResPassword, IgnoreReadOnlyRecommended, Origin, Delimiter, Editable, Notify, Converter, AddToMru, Local, CorruptLoad) As Workbook
 
 End Function
 
@@ -100,5 +100,10 @@ Public Property Creator As Integer
 '*/
 Public Property Item(Index) As Object
 
+'/*
+'Returns the parent object for the specified object. Read-only.
+'
+'*/
+Public Property Parent As Object
 
 End Class
