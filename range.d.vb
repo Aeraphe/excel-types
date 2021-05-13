@@ -399,4 +399,227 @@ End Function
 
 Public Property Column As Long
 
+Public Property Columns As Long
+        
+Public Property ColumnWidth As Variant
+
+Public Property Comment As Variant
+
+Public Property CommentThreaded As Variant
+
+
+Public Property Count As Long
+
+
+Public Property CountLarge As Variant
+
+
+Public Property Creator As Integer
+
+
+Public Property CurrentArray As Range
+
+'/*
+'Returns a Range object that represents the current region. 
+'The current region is a range bounded by any combination of blank rows and blank columns. Read-only.
+'
+'Example
+'Worksheets("Sheet1").Activate 
+'ActiveCell.CurrentRegion.Select
+'*/
+Public Property CurrentRegion As Range
+
+Public Property Dependents As Range
+
+Public Property DirectDependents As Range
+
+Public Property DirectPrecedents As Range
+
+Public Property DisplayFormat As Object
+
+
+Public Function End(Direction) As Object
+End Function
+
+Public Property EntireColumn As Range
+
+
+Public Property EntireRow As Range
+
+
+Public Property Errors As Errors
+
+
+Public Property Font As Font
+
+
+Public Property FormatConditions As Range
+
+Public Property Formula As Variant
+
+Public Property FormulaArray As Variant
+
+Public Property FormulaHidden As Variant
+
+
+Public Property FormulaLocal As Object
+
+Public Property FormulaR1C1 As Varaint
+
+Public Property FormulaR1C1Local As Varaint
+
+Public Property HasArray As Varaint
+
+Public Property HasFormula As Varaint
+
+Public Property HasRichDataType As Varaint
+
+Public Property Height As Double
+
+Public Property Hidden As Variant 
+
+Public Property HorizontalAlignment As Variant
+
+Public Property Hyperlinks As Object
+
+Public Property ID As String
+
+Public Property IndentLevel As Variant
+
+Public Property Interior As Double
+
+Public Function Item (RowIndex, ColumnIndex) As Range
+End Function
+
+
+Public Property Left As Variant
+
+
+Public Property LinkedDataTypeState As Variant
+
+Public Property ListHeaderRows As Variant
+
+
+Public Property ListObject As Object
+
+Public Property LocationInTable As Variant
+
+Public Property Locked As Variant
+
+Public Property MDX As String
+
+Public Property MergeArea As Range
+
+Public Property MergeCells As Boolean
+
+Public Property Name As Variant
+
+Public Property Next As Range
+
+Public Property NumberFormat As Variant
+
+Public Property NumberFormatLocal As Variant
+
+Public Function Offset (RowOffset, ColumnOffset) As Range
+
+End Function
+
+
+Public Property Orientation As Variant
+
+Public Property OutlineLevel As Variant
+
+Public Property PageBreak As Variant
+
+Public Property Parent As Variant
+
+Public Property Phonetic As Variant
+                    
+Public Property Phonetics As Variant
+
+Public Property PivotCell As Variant
+
+
+Public Property PivotField As Variant
+
+
+Public Property PivotItem As Variant
+
+Public Property PivotTable As Variant
+
+Public Property Precedents As Range
+
+Public Property PrefixCharacter As Variant
+
+
+Public Property Previous As Range
+
+Public Property QueryTable As Variant
+
+Public Function Range (Cell1, Cell2) As Range
+End Function
+
+Public Property ReadingOrder As Variant
+
+Public Function Resize (RowSize, ColumnSize) As Range
+End Function
+        
+
+Public Property Row As Long
+
+Public Property RowHeight As Double
+
+Public Property Rows As Range
+
+Public Property ServerActions As Variant
+
+
+Public Property ShowDetail As Variant
+
+
+Public Property ShrinkToFit As Variant
+
+
+Public Property SoundNote As Variant
+
+
+Public Property SparklineGroups As Variant
+
+
+Public Property Style As Variant
+
+Public Property Summary As Variant
+
+
+Public Property Text As String
+
+Public Property Top As Variant
+
+Public Property UseStandardHeight As Variant
+
+Public Property UseStandardWidth As Variant
+
+Public Property Validation As Variant
+
+Public Function Value (RangeValueDataType) As Variant
+End Function
+
+Public Property Value2 As Variant
+
+
+Public Property VerticalAlignment As Variant
+
+Public Property Width As Double
+
+                   
+                    
+Public Property Worksheet As Worksheet
+
+
+Public Property WrapText As Variant
+
+Public Property XPath As XPath
+                        
+
+
 End Class
