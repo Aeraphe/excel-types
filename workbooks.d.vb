@@ -84,13 +84,13 @@ Public Property Application As Application
 'Returns a Long value that represents the number of objects in the collection.
 '
 '*/
-Public Property Count 
+Public Property Count As Long
 
 '/*
 'Returns a 32-bit integer that indicates the application in which this object was created. Read-only Long.
 '
 '*/
-Public Property Creator 
+Public Property Creator As Integer
 
 
 
@@ -98,7 +98,7 @@ Public Property Creator
 'Returns a single object from a collection.
 '
 '*/
-Public Function Item (Index) 
-End Function
+Public Property Item(Index) As Object
+
 
 End Class
